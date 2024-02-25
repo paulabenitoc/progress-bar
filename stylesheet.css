@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(230, 158, 90);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.b-box {
+    display: flex;
+    background-color: whitesmoke;
+    width: 60%;
+    height: 6%;
+    margin-top: 20%;
+    text-align: center ;
+    align-items: center;
+}
+
+@keyframes loadProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.b-progress-bar {
+    margin-left: 3%;
+    height: 50%;
+    width: 90%;
+    position: relative;
+}
+
+.b-progress-bar__fill {
+    height: 100%;
+    background-color: rgb(44, 122, 68);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loadProgress 5s ease-in-out infinite
+}
